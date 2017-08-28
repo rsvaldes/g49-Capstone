@@ -1,12 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, Text, View, WebView } from 'react-native';
 
 
-class PersonalityTest extends React.Component {
+class AmIReady extends React.Component {
   render() {
     return (
         <WebView
-          source={{uri: 'http://dogtime.com/quiz/dog-breed-selector'}}
+          source={{uri: 'http://dogtime.com/quiz/am-i-ready-for-a-dog'}}
           style={{paddingTop: 20}}
         />
       );
@@ -22,4 +23,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PersonalityTest;
+export default AmIReady;

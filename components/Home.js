@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
 class Home extends React.Component {
@@ -8,8 +9,8 @@ class Home extends React.Component {
       <View style={styles.container}>
         <Text>Welcome To k9.Journey!</Text>
         <Button
-        onPress={() => navigate('PersonalityTest')}
-        title="Click Me"
+        onPress={() => navigate('Options')}
+        title="Enter"
         color="#841584"
         accessibilityLabel="Learn more about this purple button"
         />
@@ -26,4 +27,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
 export default Home;
