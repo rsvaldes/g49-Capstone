@@ -1,20 +1,48 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, Text, View, WebView } from 'react-native';
-
+import { StyleSheet, Text, View, WebView, FlatList } from 'react-native';
+import { List, ListItem, SearchBar } from "react-native-elements";
 
 class Breeds extends React.Component {
+  constructor() {
+    super()
+      this.state = {
+        breedList: []
+      }
+  }
+ //  static navigationOptions = {
+ //   title: 'Breeds'
+ // };
+componentDidMount() {
+  return fetch('https://shelby-capstone-server.herokuapp.com/breeds')
+  .then((response) => response.json())
+  .then((responseJson) => {
+    // this.setState({
+    //   breedList: responseJson,
+    // })
+    console.log(responseJson);
+  })
+}
+
   render() {
     return (
-        <Text>Here Will Lie The Breed API Info</Text>
-      );
-  }
-  componentDidMount() {
-    return fetch('http://shelby-capstone-server.herokuapp.com/breeds')
-    .then((response) => response.json())
-    .then((responseJson) => {
-      console.log(responseJson);
-    })
+      // <View>
+      // <List>
+      //   <FlatList
+      //     data={this.state.breedList}
+      //     keyExtractor={ breed => breed.id }
+      //     renderItem={({ breed }) => (
+      //       <ListItem
+      //         breedList
+      //         title={breed.name}
+      //         subtitle={breed.description}
+      //       />
+      //     )}
+      //   />
+      // </List>
+      // </View>
+      <Text>Test Test</Text>
+    );
   }
 }
 
