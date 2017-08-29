@@ -5,7 +5,7 @@ import Home from '../components/Home';
 import PersonalityTest from '../components/PersonalityTest';
 import Options from '../components/Options';
 import AmIReady from '../components/AmIReady';
-import Breeds from '../components/Breeds';
+import Breed from '../components/Breed';
 import FureverHomes from '../components/FureverHomes';
 
 export const Root = StackNavigator ({
@@ -21,8 +21,8 @@ export const Root = StackNavigator ({
   Options:{
     screen: Options
   },
-  Breeds: {
-    screen: Breeds
+  Breed: {
+    screen: Breed
   },
   FureverHomes: {
     screen: FureverHomes
