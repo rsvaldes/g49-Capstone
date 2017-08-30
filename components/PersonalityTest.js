@@ -7,7 +7,7 @@ class PersonalityTest extends React.Component {
     return (
         <WebView
           source={{uri: 'http://dogtime.com/quiz/dog-breed-selector'}}
-          style={{marginTop: 20}}
+          style={{paddingTop: 20}}
         />
       );
   }
